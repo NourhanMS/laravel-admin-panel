@@ -32,7 +32,7 @@ Admin panel that helps marketing agency to authenticate the user as admin or age
             g) php artisan serve
          
 
-    3- from your browser open : http://127.0.0.1:8001
+    3- from your browser open : http://127.0.0.1:8000/login
         it opens a login form ,
         To enter as admin :
             name:Nourhan@gmail.com 
