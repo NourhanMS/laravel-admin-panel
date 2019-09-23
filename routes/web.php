@@ -40,5 +40,5 @@ Route::post('/upload','contentsConteroller@upload')->name('upload');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'Auth\LoginController@login');
 Route::get('/generate/password', function(){return bcrypt('123456789');});
