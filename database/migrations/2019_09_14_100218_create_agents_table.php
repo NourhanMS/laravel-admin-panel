@@ -19,6 +19,7 @@ class CreateAgentTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->integer('phone');
+            $table->binary('admin');
         
         });
     }
