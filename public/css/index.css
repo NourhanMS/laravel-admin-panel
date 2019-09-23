@@ -1,0 +1,15 @@
+html,body{
+    height:100%;
+}
+#container{
+    min-height:100%;
+}
+#main{
+    padding-bottom:150px;
+    /* min-height:700px; */
+}
+#footer {
+position: relative;
+margin-top:-100px;
+height:100px;       
+}
