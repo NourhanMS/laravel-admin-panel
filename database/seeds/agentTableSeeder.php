@@ -28,6 +28,15 @@ class agentTableSeeder extends Seeder
                 'phone' => '0112756223',
             ]
         );
+        DB::table('agents')->insert(
+            [
+                'name' => 'Nourhan',
+                'email' => 'Nourhan@gmail.com',
+                'password' => bcrypt('123456789'),
+                'phone' => '0112756223',
+                'admin'=>'1'
+            ]
+        );
     }
 
 }

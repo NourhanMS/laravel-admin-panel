@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAgentTable extends Migration
+class CreateAgentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -19,8 +19,7 @@ class CreateAgentTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->integer('phone');
-            $table->binary('admin');
-        
+            $table->integer('admin')->default('0');
         });
     }
 
@@ -31,6 +30,6 @@ class CreateAgentTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('agent');
+        Schema::dropIfExists('agents');
     }
 }
