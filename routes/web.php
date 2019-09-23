@@ -42,3 +42,7 @@ Auth::routes();
 
 Route::get('/', 'Auth\LoginController@login');
 Route::get('/generate/password', function(){return bcrypt('123456789');});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

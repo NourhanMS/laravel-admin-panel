@@ -40,5 +40,12 @@ class LoginController extends Controller
     // {
     //     return redirect('/login');
     // }
+    public function authenticate(Request $request)
+    {
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'admin' => 1])) {
+            // Authentication passed...
+            return redirect()->intended('/admin');
+        }
+    }
    
 }
